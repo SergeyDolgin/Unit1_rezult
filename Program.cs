@@ -31,7 +31,8 @@ void FuncLess3(string[] YourMassive, string[] ResultMassive)
         }
     }
 }
-
+try
+{
 System.Console.Write("Введите размерность вашего массива = ");
 int n = Convert.ToInt32(Console.ReadLine());
 string [] YourMassive = Massive (n); 
@@ -40,4 +41,9 @@ string[] ResultMassive = new string[n];
 FuncLess3(YourMassive, ResultMassive);
 System.Console.Write("Элементы, длина которых меньше или равна 3 символа, из вашего массива это: ");
 PrintArray(ResultMassive);
+}
+catch
+{
+System.Console.Write("Размерность это целое число. Что-то пошло не так...");
+}
 
